@@ -45,10 +45,7 @@ def int_or_str(value):
         return value
 
 
-try:
-    __version__ = metadata.version("redis")
-except metadata.PackageNotFoundError:
-    __version__ = "99.99.99"
+__version__ = "4.3.6"
 
 
 VERSION = tuple(map(int_or_str, __version__.split(".")))
